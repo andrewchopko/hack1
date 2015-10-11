@@ -1,0 +1,82 @@
+<!doctype>
+<html>
+<head>
+    <title>Лікарні міста Вінниці</title>
+    <link rel="stylesheet" href="styledoctor.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <meta charset="utf-8">
+    
+</head>
+<body>
+    
+    <div class="menu"> 
+<div class="icon-close"> 
+<i class="fa fa-close"></i> 
+</div> 
+<ul> 
+<a href="enter.html"><li>Вхід <i class="fa fa-user-md fa-2x"></i></li></a> 
+<a href="doctor.html"><li>Реєстрація на сайті <i class="fa fa-plus-square fa-2x"></i></i></li></a> 
+<a href="main.html"><li>Вибрати лікарню <i class="fa fa-hospital-o fa-2x"></i></li></a> 
+<a href="about.html"><li>Про нас <i class="fa fa-heart fa-2x"></i></li></a> 
+<a href="delete_order.html"><li>Видалення запису <i class="fa fa-trash fa-2x"></i></li></a> 
+<a href="connection.html"><li>Зворотній зв'язок <i class="fa fa-comment fa-2x"></i></li></a> 
+<li><form method = "post" action="http://localhost/project/actionSearch.php" class="google"><i class="fa fa-search"></i><input name = "enteredWords" type="search" placeholder="Пошук" class="google_line"><input type="submit" class="but" value="Ok"></form></li> 
+</ul> 
+</div>
+
+    <div class="jumbotron">
+      <div class="icon-menu">
+        <i class="fa fa-bars"></i>
+            Меню
+      </div>
+      <div class="content bot">
+        <div class="container">    
+        <div class="block">
+            <a href="http://localhost/project/hospital1.php?hospital_id=1">
+                <div class="hospital" id="h1">
+                    <div class="row"><p class="nameHospital">Вінницька міська клінічна лікарня №1</p>
+                </div></div>
+            </a>
+            <a href="http://localhost/project/hospital1.php?hospital_id=2">
+                <div class="hospital" id="h2">
+                    <div class="row"><p class="nameHospital">Вінницька міська клінічна лікарня №2</p>
+                </div>
+                </div>
+            </a>
+            <a href="http://localhost/project/hospital1.php?hospital_id=3">
+                <div class="hospital" id="h3">
+                    <div class="row"><p class="nameHospital">Вінницька міська клінічна лікарня №3</p>
+                </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="container">    
+        <div class="block">
+            <a href="http://localhost/project/hospital1.php?hospital_id=4">
+                <div class="hospital col-md-4" id="pirohova">
+                    <div class="row"><p class="nameHospital">Вінницька обласна клінічна лікарня ім. М. І. Пирогова</p>
+                </div>
+                </div>
+            </a>
+            <a href="http://localhost/project/hospital1.php?hospital_id=5">
+                <div class="hospital col-md-4" id="hchildrens">
+                   <div class="row"><p class="nameHospital">Вінницька обласна дитяча клінічна лікарня</p></div>
+                </div>
+            </a>
+            <a href="http://localhost/project/hospital1.php?hospital_id=6">
+                <div class="hospital col-md-4" id="dantist">
+                   <div class="row"><p class="nameHospital">Міська дитяча стоматологічна поліклініка</p>
+                   </div>
+                </div>
+            </a>
+        </div>
+    </div>        
+      </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

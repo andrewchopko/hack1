@@ -1,0 +1,93 @@
+
+<!doctype>
+<html>
+<head>
+    <title>Вінницька міська клінічна лікарня №1</title>
+    <link rel="stylesheet" href="styledoctor.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+    
+   <div class="menu"> 
+<div class="icon-close"> 
+<i class="fa fa-close"></i> 
+</div> 
+<ul> 
+<a href="enter.html"><li>Вхід <i class="fa fa-user-md fa-2x"></i></li></a> 
+<a href="doctor.html"><li>Реєстрація на сайті <i class="fa fa-plus-square fa-2x"></i></i></li></a> 
+<a href="main.html"><li>Вибрати лікарню <i class="fa fa-hospital-o fa-2x"></i></li></a> 
+<a href="about.html"><li>Про нас <i class="fa fa-heart fa-2x"></i></li></a> 
+<a href="delete_order.html"><li>Видалення запису <i class="fa fa-trash fa-2x"></i></li></a> 
+<a href="connection.html"><li>Зворотній зв'язок <i class="fa fa-comment fa-2x"></i></li></a> 
+<li><form method = "post" action="http://localhost/project/actionSearch.php" class="google"><i class="fa fa-search"></i><input name = "enteredWords" type="search" placeholder="Пошук" class="google_line"><input type="submit" class="but" value="Ok"></form></li> 
+</ul> 
+</div>
+    
+    <div class="jumbotron">
+      <div class="icon-menu">
+        <i class="fa fa-bars"></i>
+            Меню
+      </div>
+      <div class="content">
+          <h1>Вінницька міська клінічна лікарня №1</h1>
+          <form method="post" action="http://localhost/project/actionDoctor.php">
+          <h2>Реєстрація</h2>
+			<p class="field">П.І.Б.<br>
+			<input type="text" name = "name"></p>
+			<p class="field">Медичний заклад</br>
+			<select name="hospital_id" size = "1">
+			    <option value="1" selected>Вінницька міська клінічна лікарня №1</option>
+			    <option value="2">Вінницька міська клінічна лікарня №2</option>
+			    <option value="3">Вінницька міська клінічна лікарня №3</option>
+			    <option value="4">Вінницька обласна клінічна лікарня ім. М. І. Пирогова</option>
+			    <option value="5">Вінницька обласна дитяча клінічна лікарня</option>
+			    <option value="6">Міська дитяча стоматологічна поліклініка</option>
+			</select></p>
+			<p class="field">Спеціалізація<br/>
+			<select name="type" size = "1">
+			    <option value="1" selected>Хірург</option>
+			    <option value="2">Педіатр</option>
+			    <option value="3">Травматолог</option>
+			</select></p>
+			<p class="field">Дні прийому<br><p>
+			Пн <input type="checkbox" name="monday" value="#">
+			Вт <input type="checkbox" name="tuesday" value="#">
+			Ср <input type="checkbox" name="wednesday" value="#">
+			Чт <input type="checkbox" name="thursday" value="#">
+              Пт <input type="checkbox" name="friday" value="#"></p>
+			</p>
+			<p class="field">Години прийому<br>
+			<input placeholder="10" class="inp_time time" type="text" name = "start" class="time">
+			 до 
+			<input placeholder="14" class="inp_time time" type="text" name = "finish">				
+			</p>
+			<p class="field">Тривалість прийому:<br>
+			<input class="inp_time time" type="text" name = "duration">
+			хв.				
+			</p>
+			<p class="field">Кабинет №:<br>
+			<input type="text" name = "cabinet">				
+			</p>
+			<hr/>
+			<p class="field" >E-mail:<br>
+			<input placeholder="example@gmail.com" type="text" name = "email">				
+			</p>
+			<p class="field">Пароль:<br>
+			<input type="password" name = "password">				
+			</p>
+			<p class="field">Повторне ведення паролю:<br>
+			<input type="password" name="repassword">				
+			</p>
+			<input type="submit" class="btn">
+		</form>
+      </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype>
+<html>
+<head>
+    <title>Вінницька міська клінічна лікарня №1</title>
+    <link rel="stylesheet" href="styledoctor.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <meta charset="utf-8">
+    
+</head>
+<body>
+    
+    <div class="menu"> 
+<div class="icon-close"> 
+<i class="fa fa-close"></i> 
+</div> 
+<ul> 
+<a href="enter.html"><li>Вхід <i class="fa fa-user-md fa-2x"></i></li></a> 
+<a href="doctor.html"><li>Реєстрація на сайті <i class="fa fa-plus-square fa-2x"></i></i></li></a> 
+<a href="main.html"><li>Вибрати лікарню <i class="fa fa-hospital-o fa-2x"></i></li></a> 
+<a href="about.html"><li>Про нас <i class="fa fa-heart fa-2x"></i></li></a> 
+<a href="delete_order.html"><li>Видалення запису <i class="fa fa-trash fa-2x"></i></li></a> 
+<a href="connection.html"><li>Зворотній зв'язок <i class="fa fa-comment fa-2x"></i></li></a> 
+<li><form method = "post" action="http://localhost/project/actionSearch.php" class="google"><i class="fa fa-search"></i><input name = "enteredWords" type="search" placeholder="Пошук" class="google_line"><input type="submit" class="but" value="Ok"></form></li> 
+</ul> 
+</div>
+
+    <div class="jumbotron">
+      <div class="icon-menu">
+        <i class="fa fa-bars"></i>
+            Меню
+      </div>
+      <div class="content">
+       <h1>Зворотній зв'язок</h1>
+        <form method = "post" action="http://localhost/project/actionConnection.php" class="enter">
+            <input name = "email" type="email" 
+            style="width:350px; margin-top:30px; margin-bottom:30px" placeholder="Ваш Email"><br>
+            <textarea name="text" id="" cols="30" rows="10" style="width:350px; margin-bottom:30px" placeholder="Ваше повідоомлення"></textarea><br>
+            <input type="submit" class="btn" style="margin-bottom:20px">
+        </form>
+      </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
